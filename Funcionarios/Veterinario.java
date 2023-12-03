@@ -1,4 +1,4 @@
-package com.mago.zoologico;
+package com.mago.zoologico.Funcionarios;
 
 import com.mago.zoologico.Animais.Animal;
 

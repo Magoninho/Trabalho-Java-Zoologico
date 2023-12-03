@@ -21,12 +21,6 @@ public class Macaco extends Animal implements Terrestre {
 		
 	}
 
-	@Override
-	public void mover() {
-		System.out.println("macaco se move");
-		
-	}
-
 	public void andar() {
 		System.out.println("macaco anda");
 		

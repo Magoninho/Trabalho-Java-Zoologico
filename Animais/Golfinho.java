@@ -22,12 +22,6 @@ public class Golfinho extends Animal implements Aquatico {
 		
 	}
 
-	@Override
-	public void mover() {
-		System.out.println("Golfinho se move");
-		
-	}
-
 	public void nadar() {
 		System.out.println("Golfinho nada");
 		
