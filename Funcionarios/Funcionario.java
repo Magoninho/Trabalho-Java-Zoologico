@@ -10,4 +10,21 @@ public abstract class Funcionario {
     }
     
     public abstract void trabalhar();
+
+    public String getNome() {
+        return nome;
+    }
+
+    public float salario() {
+        return salario;
+    }
+
+    public void setSalario(float salario) {
+        this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario [nome=" + nome + ", salario=" + salario + "]";
+    }
 }

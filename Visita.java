@@ -20,4 +20,19 @@ public class Visita {
     public ArrayList<Visitante> getVisitantes() {
         return this.visitantes;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder finalString = new StringBuilder();
+
+        for (Visitante visitante:
+             this.visitantes) {
+            finalString.append(visitante.getNome());
+            finalString.append("   Idade: ");
+            finalString.append(String.valueOf(visitante.getIdade()));
+            finalString.append("\n");
+        }
+
+        return String.valueOf(finalString);
+    }
 }

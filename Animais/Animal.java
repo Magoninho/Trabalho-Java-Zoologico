@@ -50,4 +50,9 @@ public abstract class Animal {
 
 
 	public abstract void fazerBarulho();
+
+	@Override
+	public String toString() {
+		return "Animal [nome=" + nome + ", idade=" + idade + ", genero=" + genero + "]";
+	}
 }
