@@ -1,6 +1,6 @@
 package com.mago.zoologico;
 
-import com.mago.zoologico.Animais.FuncionariosLoader;
+import com.mago.zoologico.Animais.Golfinho;
 
 public class Zoologico {
 
@@ -12,6 +12,18 @@ public class Zoologico {
 //		} catch (ErroArquivoException e) {
 //			e.printStackTrace();
 //		}
+
+//		Aquario aquario = new Aquario();
+//
+//		aquario.adicionarAnimal(new Golfinho("beto", 6, 'M'));
+//
+//		System.out.println(aquario.animais);
+
+		Visita visita = new Visita();
+
+		visita.adicionarVisitante(new Visitante("Moacir", 69));
+
+		System.out.println(visita.getVisitantes());
 		
 	}
 }

@@ -1,4 +1,4 @@
-package com.mago.zoologico.Animais;
+package com.mago.zoologico.Funcionarios;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,13 +11,13 @@ import com.mago.zoologico.ErroArquivoException;
 public class FuncionariosLoader {
 	public void loadNamesFromFile(String filename) throws ErroArquivoException {
 		try {
-	      File myObj = new File(filename);
-	      Scanner myReader = new Scanner(myObj);
-	      while (myReader.hasNextLine()) {
-	        String data = myReader.nextLine();
+	      File file = new File(filename);
+	      Scanner scanner = new Scanner(file);
+	      while (scanner.hasNextLine()) {
+	        String data = scanner.nextLine();
 	        System.out.println(data);
 	      }
-	      myReader.close();
+		  scanner.close();
 	    } catch (FileNotFoundException e) {
 	      throw new ErroArquivoException();
 	    }

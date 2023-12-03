@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.mago.zoologico.Animais.Animal;
 
 public abstract class Jaula {
-    private ArrayList<Animal> animais;
+    protected ArrayList<Animal> animais = new ArrayList<Animal>();
 
     public void adicionarAnimal(Animal animal) {
         animais.add(animal);
